@@ -1,3 +1,3 @@
-#!/bin/c??
+#!/bin/sh
 
 ls bin/c??
