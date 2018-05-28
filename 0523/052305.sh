@@ -1,1 +1,1 @@
-sudo du -b /etc/* | sort -rn | tail -n5
+sudo find /etc -type f | sudo xargs du -b | sort -n | head -n5

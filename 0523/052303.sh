@@ -1,1 +1,1 @@
-du -b ~/* | sort -n | head -n5
+find ~ -type f | xargs du -b  | sort -n | head -n5
