@@ -1,2 +1,2 @@
 #!/bin/bash
-cat ~/sample/file1 ~/sample/file2 ~/sample/file3 | sort | uniq |sed /^A/d
+cat ~/sample/file{1..3} | sort | uniq |sed /^A/d
