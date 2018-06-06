@@ -1,0 +1,14 @@
+#!/bin/bash
+
+_IFS=$IFS
+IFS=$'\n'
+
+for file in $(find ~ -type f )
+do
+	size=$(ls -l $file | awk '{print $5}')
+if [ "$size" -eq "0" ]; then
+	echo "ファイルサイズ$size $file"
+fi
+done
+
+IFS=$_IFS
